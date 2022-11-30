@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./libs/calendar/main.min.css">
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./libs/aos.css">
+    <link rel="stylesheet" href="./libs/bootstrap.min.css">
+    <title>Oqoltin tuman hokimligi</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- ===  Header Starting  === -->
+    <!-- ========================= -->
+    <header class="header">
+        <!-- header top start -->
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top_row">
+                    <a href="index.html" class="header__top_logo">
+                        <img src="img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
+                        <span class="header__top_logo-text">Oqoltin tuman hokimligi</span>
+                    </a>
+
+                    <div class="header__top_text">
+                        <i class="fas fa-map-marker-alt header__top_text-icon"></i>
+                        <p class="header__top_text-text">
+                            Sirdaryo viloyati, Oqoltin tumani
+                        </p>
+                    </div>
+
+                    <div class="header__top_text">
+                        <i class="fas fa-clock header__top_text-icon"></i>
+                        <p class="header__top_text-text">
+                            Dushanba - Juma, 9:00 - 18:00,
+                            Tushlik 13:00-14:00
+                        </p>
+                    </div>
+
+                    <div class="header__top_connect">
+                        <a href="tel: +998672254090" class="tel_nomer">
+                            <i class="fas fa-phone-alt tel_nomer-icon"></i>
+                            +998 (67) 243-10-05
+                        </a>
+                        <div class="messenger__icons">
+                            <a href="https://www.facebook.com/oqoltin.yangiliklari/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://t.me/oqoltin_yangiliklari/">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCODSax5LIRC77F2V9LXchIw/">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header__top_translatebox">
+                        <div class="translatebox">
+                            <div class="dropdown">
+                                <button class="btn btn-white dropdown-toggle lang-btn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fal fa-language lang-icon"></i>
+                                    UZ
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Uz</a></li>
+                                    <li><a class="dropdown-item" href="#">Ru</a></li>
+                                    <li><a class="dropdown-item" href="#">Eng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="eyebox">
+                            <div class="dropdown">
+                                <button class="btn btn-white dropdown-toggle eye-btn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-eye eyebox-icon"></i>
+                                    <p class="eyebox-text">
+                                        Ko'zi ojizlar uchun
+                                    </p>
+                                </button>
+                                <ul class="dropdown-menu eye-dropdown-menu">
+                                    <li class="eye-item">
+                                        Tashqi ko'rinish
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="d-flex align-items-center eye-item">
+                                        <button class="eye-function-btn simple-theme">A</button>
+                                        <button class="eye-function-btn gray-theme">A</button>
+                                        <button class="eye-function-btn white-black-theme">A</button>
+                                    </li>
+                                    <li class="eye-item">
+                                        Shrift hajmi
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="eye-item">
+                                        <p class="eye-function-info mb-0">
+                                            <span>0%</span>
+                                            Kattalashtirish
+                                        </p>
+                                        <input type="range" class="form-range window-range">
+                                    </li>
+                                    <li class="eye-item">
+                                        <p class="eye-function-info mb-0">
+                                            <span>0%</span>
+                                            Kattalashtirish
+                                        </p>
+                                        <input type="range" class="form-range page-range">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header top end -->
+    </header>
+
+
+    <!-- header navabr start -->
+    <div class="header__navbar">
+        <div class="container">
+            <div class="header__navbar_row">
+                <div class="header__navbar_bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="primary-menu header__navbar_list">
+                    <li class="header__navbar_item">
+                        Hokimiyat haqida
+                        <ul>
+                            <li><a href="rahbariyat.html">Rahbariyat</a></li>
+                            <li><a href="tuzilma.html">Tashkiliy tuzilma</a></li>
+                            <li><a href="funksiyalar.html">Viloyat hokimligi funktsiyalari, vazifalari, huquqlari va
+                                    majburiyatlari</a></li>
+                            <li><a href="qabul.html">Fuqarolarni qabul qilish tartibi</a></li>
+                            <li><a href="rekvizit.html">Rekvizitlar</a></li>
+                            <li><a href="hokimga-murojaat.html">Hokimga murojaat</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar_item">
+                        <a href="news.html" home-link>Yangiliklar</a>
+                    </li>
+                    <li class="header__navbar_item">
+                        Boshqarma va tashkilotlar
+                    </li>
+                    <li class="header__navbar_item">
+                        Mahalliy Kengash
+                        <ul>
+                            <li><a href="senat.html">Senat a'zolari</a></li>
+                            <li><a href="./deputat.html">Deputatlar tarkibi</a></li>
+                            <li><a href="./kotib-mudirlari.html">Kotibiyat mudirlari</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar_item">
+                        Matbuot xizmati
+                        <ul>
+                            <li><a href="./media-xizmat.html">Media xizmati haqida</a></li>
+                            <li><a href="#">Media rejalar</a></li>
+                            <li><a href="#">Veb saytda joylashtirilgan ma'lumotlar</a></li>
+                            <li><a href="./axborot-olish.html">Axborot olish uchun so'rovlarni qabul qilish tartibi</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navbar_item">
+                        <a href="aloqa.html" home-link>Aloqa</a>
+                    </li>
+                    <li class="header__navbar_item">
+                        <a href="ochiq-malumot.html" home-link>Ochiq ma'lumotlar</a>
+                    </li>
+                </ul>
+
+                <div class="big-nav-list deactive d-none d-lg-block">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="header__navbar_bars active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul class="header__navbar_list">
+                            <li class="header__navbar_item">
+                                Hokimiyat haqida
+                                <ul>
+                                    <li><a href="rahbariyat.html">Rahbariyat</a></li>
+                                    <li><a href="tuzilma.html">Tashkiliy tuzilma</a></li>
+                                    <li><a href="funksiyalar.html">Viloyat hokimligi funktsiyalari, vazifalari,
+                                            huquqlari va
+                                            majburiyatlari</a></li>
+                                    <li><a href="qabul.html">Fuqarolarni qabul qilish tartibi</a></li>
+                                    <li><a href="rekvizit.html">Rekvizitlar</a></li>
+                                    <li><a href="hokimga-murojaat.html">Hokimga murojaat</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar_item">
+                                <a href="news.html" home-link>Yangiliklar</a>
+                            </li>
+                            <li class="header__navbar_item">
+                                Boshqarma va tashkilotlar
+                            </li>
+                            <li class="header__navbar_item">
+                                Mahalliy Kengash
+                                <ul>
+                                    <li><a href="senat.html">Senat a'zolari</a></li>
+                                    <li><a href="#">Deputatlar tarkibi</a></li>
+                                    <li><a href="#">Kotibiyat mudirlari</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar_item">
+                                Matbuot xizmati
+                                <ul>
+                                    <li><a href="#">Media xizmati haqida</a></li>
+                                    <li><a href="#">Media rejalar</a></li>
+                                    <li><a href="#">Veb saytda joylashtirilgan ma'lumotlar</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navbar_item">
+                                <a href="aloqa.html" home-link>Aloqa</a>
+                            </li>
+                            <li class="header__navbar_item">
+                                <a href="ochiq-malumot.html" home-link>Ochiq ma'lumotlar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header navabr end -->
+    <!-- ========================= -->
+    <!-- ===  Header End  === -->
+    <!-- ========================= -->
+
+
+    <!-- ========================= -->
+    <!-- ===  Main Starting  === -->
+    <!-- ========================= -->
+    <main>
+        <!-- main slider start -->
+        <section class="senat-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-9 px-0">
+                        <div class="container">
+                            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#!">Mahalliy kengash</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Qarorlar </li>
+                                </ol>
+                            </nav>
+                            <h2 class="section-title mb-30">
+                                Qabul qilingan qarorlar
+                            </h2>
+                            
+                            <ol class="rules">
+                                <li><a href="http://sirdaryo.shoshma.uz/uploads/2021/07/karor.pdf">“O‘zbekiston Respublikasining ma’muriy-hududiy tuzilishi to‘g‘risida”gi O‘zbekiston Respublikasining 2020 yil 28 avgustdagi O‘RQ-635-sonli Qonuniga asosan Boyovut tumani “Shirin” mahallasini Shirin shahriga qo‘shib berilishi to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/jul-haritasi.pdf">O‘zbekiston Respublikasi Prezidenti Sh.M.Mirziyoyevning 2020 yil 29 dekabr kuni Oliy Majlisga yo‘llagan Murojaatnomasida belgilab berilgan ustuvor vazifalarni viloyatda amalga oshirish to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/davlatdasturibujicakaror.pdf">O‘zbekiston Respublikasi Prezidentining 2021 yil 3 fevraldagi “Yoshlarni qo‘llab-quvvatlash va aholi salomatligini mustahkamlash yili”da amalga oshirishga oid davlat dasturi to‘g‘risida”gi PF-6155-sonli Farmoni ijrosini ta’minlash to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/moliakaror.pdf">O‘zbekiston Respublikasi Prezidenti qaror va farmoyishlarida, Hukumat qarorlari va bayonlarida belgilangan topshiriqlar ijrosini ta’minlash hamda hududlarni ijtimoiy-iqtisodiy rivojlantirish, Infratuzilma ob’yektlarini qurish va aholi turmush farovonligini oshirish maqsadida viloyat mahalliy byudjetining 2021 yil ijrosi davomida shakllangan qo‘shimcha manbalar hisobidan mablag‘larni yo‘naltirish to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/zamoatfondi.pdf">Xalq deputatlari Sirdaryo viloyat Kengashi huzuridagi nodavlatnotijorat tashkilotlari va fuqarolik jamiyatining boshqa institutlarini qo‘llab-quvvatlash jamoat fondi faoliyatini tashkil etish hamda moliyaviy ta’minlash to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/karormolia116.pdf">O‘zbekiston Respublikasi Prezidenti qaror va farmoyishlarida, Hukumat qarorlari va bayonlarida belgilangan topshiriqlar ijrosini ta’minlash hamda hududlarni ijtimoiy-iqtisodiy rivojlantirish, Infratuzilma ob’yektlarini qurish va aholi turmush farovonligini oshirish maqsadida viloyat mahalliy byudjetining 2021 yil ijrosi davomida shakllangan qo‘shimcha manbalar hisobidan mablag‘larni yo‘naltirish to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/karor-prezident-maktabi.pdf">O‘zbekiston Respublikasi Prezidentining 2020 yil 28 dekabrdagi “2021-2023 yillarda O‘zbekiston Respublikasining ijtimoiy va ishlab chiqarish infratuzilmasini rivojlantirish chora-tadbirlar to‘g‘risida”gi PQ4936-sonli qaroriga asosan Guliston shahrida “Prezident maktabi”ni qurilishi bo‘yicha viloyat qurilish bosh boshqarmasi boshlig‘iningaxboroti haqida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/122-20-6.pdf">O‘zbekiston Respublikasi Prezidentining 2021 yil 10 fevaldagi “Qonunchilik hujjatlari ijrosini samarali tashkil etishdadavlat boshqaruvi organlari va mahalliy ijro etuvchi hokimiyat organlari rahbarlarining shaxsiy javobgarligini kuchaytirishga doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi PF-6166-sonli Farmoni, Vazirlar Mahkamasining 2021 yil 12 fevraldagi 48-F-sonli farmoyishi ijrosini ta’minlash to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/121-20-6-karor.pdf">Viloyatda “Obod qishloq” va “Obod mahalla” hamda boshqa maqsadli dasturlar doirasida2021 yilda amalga oshirilishi kutilayotgan vazifalar to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/izro-intizomi-karori.pdf">O‘zbekiston Respublikasi Prezidentining 2021 yil 10 fevraldagi “Qonunchilik hujjatlari ijrosini samarali tashkil etishdadavlat boshqaruvi organlari va mahalliy ijro etuvchi hokimiyat organlari rahbarlarining shaxsiy javobgarligini kuchaytirishga doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi PF-6166-sonli Farmonida belgilangan vazifalarning ijrosi haqida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/kicik-sanoat-zonasi-karori.pdf">Viloyatda yangi tashkil etiladigan kichik sanoat zonalari to‘g‘risida</a></li>
+                                <li><a href="http://sirdaryo.shoshma.uz//uploads/2021/07/molia-mablag-azratis-145-22-06-sonli.pdf">O‘zbekiston Respublikasi Prezidenti qaror va farmoyishlarida, Hukumat qarorlari va bayonlarida belgilangan topshiriqlar ijrosini ta’minlash hamda hududlarni ijtimoiy-iqtisodiy rivojlantirish, Infratuzilma ob’yektlarini qurish va aholi turmush farovonligini oshirish maqsadida viloyat mahalliy byudjetining 2021 yil ijrosi davomida shakllangan qo‘shimcha manbalar hisobidan mablag‘larni ajratish to‘g‘risida</a></li>
+                            </ol>
+
+                            <!-- <table class="info-tabel">
+                                <thead>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>Okrug nomi</th>
+                                        <th>Familiyasi ismi va otasining ismi</th>
+                                        <th>Ish joyi va lavozimi</th>
+                                        <th>Partiyasi</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1-Madaniyat</td>
+                                    <td>Mirzayev G'ofurjon G'aniyevich</td>
+                                    <td>Sirdaryo viloyati hokimi</td>
+                                    <td>O'ZLiDeP</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2-Аhillik</td>
+                                    <td>Аrtukboeva Xaytxan</td>
+                                    <td>Oʼzbekiston yozuvchilar uyushmasi Sirdaryo viloyati boʼlimi masʼul rahbari</td>
+                                    <td>OʼzXDP</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3-Navbahor</td>
+                                    <td>Vakant</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>4-Namuna</td>
+                                    <td>Tojibaeva Nargiza Keldibekovna</td>
+                                    <td>Mahalla va oilani qoʼllab quvvatlash boshqarmasi boshligʼining birinchi oʼrinbosari</td>
+                                    <td>OʼzEP</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>5-Boʼston</td>
+                                    <td>Sulaymanov Аmaliddin Nurbaevich	</td>
+                                    <td>GDU ilmiy ishlar va innovatsiyalar boʼyicha prorektori</td>
+                                    <td>“Аdolat”SDP</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>6-Bunyodkor</td>
+                                    <td>Shodmonov Oʼrishali Shodmonovich</td>
+                                    <td>Xususiy tadbirkor</td>
+                                    <td>OʼzEP</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>7-Dehqonobod</td>
+                                    <td>Sotiboldiev Ulugʼbek Norxojaevich</td>
+                                    <td>Mirzaobod tumani “BEK Sluster” MChJ qoʼshma korxonasi bosh direktori</td>
+                                    <td>OʼzLiDeP</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>8-Navroʼz</td>
+                                    <td>Tuychiev Аnvar Mirzaaxmedovich</td>
+                                    <td>Oʼzbekiston Respublikasi Oliy Majlisi Senatining Xalqaro munosabatlar, tashqi iqtisodiy aloqalar, xorijiy investitsiyalar va turizm masalalari qoʼmitasi raisi oʼrinbosari</td>
+                                    <td>OʼzXDP</td>
+                                </tr>
+                               
+                            </table> -->
+
+                            <div class="copy-elements">
+                                <div class="date-view order-0">
+                                    <i class="fas fa-calendar"></i>
+                                    <p>
+                                        <span class="hours">00:00</span> / <span class="date">25.04.2022</span>
+                                    </p>
+                                </div>
+                                <button class="copy-button order-2 order-sm-1">
+                                    <i class="fal fa-clone"></i>
+                                    Nusxa olish
+                                </button>
+                                <div class="date-view order-1 order-sm-2">
+                                    <i class="fas fa-eye"></i>
+                                    <p>
+                                        <span class="view-numbers">4918</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 px-0">
+                        <div class="container">
+                            <table class="fast-connect-parent mb-50">
+                                <tr>
+                                    <td class="fast-connect-box">
+                                        <a href="https://regulation.gov.uz/uz/document/index?GlobalSearch%5Btitle%5D=&GlobalSearch%5Bid%5D=&GlobalSearch%5Bauthority_id%5D=7580&GlobalSearch%5Bdocument_type_id%5D=&GlobalSearch%5Bpublication_at_range%5D=&GlobalSearch%5Bdiscussing_status_id%5D=2" class="box">
+                                            <div class="fast-connect-img">
+                                                <img src="img/fast_connect1.png" alt="">
+                                            </div>
+                                            <span class="fast-connect-text">O‘z fikrlaringizni yuboring</span>
+                                        </a>
+                                    </td>
+                                    <td class="fast-connect-box">
+                                        <a href="./hokimga-murojaat.html" class="box">
+                                            <div class="fast-connect-img">
+                                                <img src="img/fast_connect2.png" alt="">
+                                            </div>
+                                            <span class="fast-connect-text">Hokimga murojaat</span>
+                                        </a>
+                                    </td>
+                                    <td class="fast-connect-box">
+                                        <a href="./hokimga-murojaat.html" class="box">
+                                            <div class="fast-connect-img">
+                                                <img src="img/fast_connect3.png" alt="">
+                                            </div>
+                                            <span class="fast-connect-text">Muammolar haqida xabar bering</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h2 class="section-title mb-30">Tadbirlar taqvimi</h2>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-xl-12">
+                                    <div class="calendar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main slider end -->
+    </main>
+    <!-- ========================= -->
+    <!-- ===  Main End  === -->
+    <!-- ========================= -->
+
+
+    <!-- ========================= -->
+    <!-- ===  Footer Start  === -->
+    <!-- ========================= -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                        <a href="index.html" class="header__top_logo">
+                            <img src="img/gerb_logo.png" alt="Logo image" class="header__top_logo-img">
+                            <span class="header__top_logo-text">Boyovut tuman hokimligi</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <img src="./img/2022.png" alt="year name" class="year-name-img">
+                    </div>
+                </div>
+                <div class="row footer-top-menu">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <ul class="menu-list">
+                            <li class="menu-item">Hokimiyat haqida</li>
+                            <li class="menu-item"><a href="./rahbariyat.html" class="menu-link">Rahbariyat</a></li>
+                            <li class="menu-item"><a href="./tuzilma.html" class="menu-link">Tashkiliy tuzilma</a></li>
+                            <li class="menu-item"><a href="./funksiyalar.html" class="menu-link">Viloyat hokimligi funktsiyalari, vazifalari, huquqlari va
+                                majburiyatlari</a></li>
+                            <li class="menu-item"><a href="./qabul.html" class="menu-link">Fuqarolarni qabul qilish tartibi</a></li>
+                            <li class="menu-item"><a href="./rekvizit.html" class="menu-link">Rekvizitlar</a></li>
+                            <li class="menu-item"><a href="./hokimga-murojaat.html" class="menu-link">Hokimga murojaat</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        
+                        <ul class="menu-list">
+                            <li class="menu-item">Mahaliy Kengash</li>
+                            <li class="menu-item"><a href="./senat.html" class="menu-link">Sen'at A'zolari</a></li>
+                            <li class="menu-item"><a href="./deputat.html" class="menu-link">Deputatlar tarkibi</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Kotibiyat mudirlari</a></li>
+                            <li class="menu-item"><a href="./qarorlar.html" class="menu-link">Qabul qilingan qarorlar</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <ul class="menu-list">
+                            <li class="menu-item">Matbuot xizmati</li>
+                            <li class="menu-item"><a href="#" class="menu-link">Media xizmati haqida</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Media rejalar</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Veb saytda joylashtirilgan ma'lumotlar</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Axborot olish uchun so'rovlarni qabul qilish tartibi</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-5 mb-lg-0">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="./aloqa.html" class="menu-link">Aloqa</a></li>
+                            <li class="menu-item"><a href="./news.html" class="menu-link">Yangiliklar</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Ochiq ma'lumotlar</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Boshqarma va tashkilotlar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-3 mb-sm-5 mb-lg-0">
+                        <div class="contact-box">
+                            <h5 class="contact-title">Aloqa</h5>
+                            <div class="header__top_text">
+                                <i class="fas fa-map-marker-alt header__top_text-icon"></i>
+                                <p class="header__top_text-text">
+                                    Boyovut tumani "Ijodkor" mahallasi Jayxun ko'chasi 5-uy.
+                                </p>
+                            </div>
+
+                            <div class="header__top_text">
+                                <i class="fas fa-clock header__top_text-icon"></i>
+                                <p class="header__top_text-text">
+                                    Dushanba - Juma, 9:00 - 18:00,
+                                    Tushlik 13:00-14:00
+                                </p>
+                            </div>
+
+                            <div class="header__top_connect">
+                                <a href="tel: +998672254090" class="tel_nomer">
+                                    <i class="fas fa-phone-alt tel_nomer-icon"></i>
+                                    +998 (67) 390-13-58
+                                </a>
+                                <div class="messenger__icons">
+                                    <a href="https://www.facebook.com/Boyovut.tumani.hokimligi/">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/boyovut_ovozi/">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://t.me/Boyovutliklar">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/boyovut_ovozi/">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="map-box">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d194548.1579493252!2d68.82140268564972!3d40.368626953275815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssirdaryo%20viloyati%20boyovut%20tuman%20hokimligi!5e0!3m2!1sen!2s!4v1669545239561!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="container">
+                <p class="end-text">
+                    © <span class="current-year">2022</span> <a href="https://itlive.uz" class="producer">IT-Live</a>. All
+                    rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========================= -->
+    <!-- ===  Footer End  === -->
+    <!-- ========================= -->
+
+        <!-- toasts start -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">🔵Foydalanuvchi</strong>
+                    <small>Hozir</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body fw-bold">
+                    🤗
+                </div>
+            </div>
+        </div>
+        <!-- toasts end -->
+
+
+
+
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/calendar/main.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="./libs/aos.js"></script>
+    <script src="./libs/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
