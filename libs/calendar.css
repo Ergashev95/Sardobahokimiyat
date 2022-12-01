@@ -1,0 +1,209 @@
+/*===========fonts==========*/
+/*-----------fonts----------*/
+/*===========all============*/
+
+#calendar {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#calendar thead tr:last-child {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.2px;
+    color: #8F95B2;
+}
+
+#calendar thead {
+    width: 100%;
+}
+
+#calendar thead tr {
+    width: 100%;
+}
+
+#calendar thead tr td {
+    width: calc(100% / 7);
+    padding: 15px 0 15px 0;
+    color: rgba(163, 166, 180, 1);
+}
+
+.oy {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #EAECF0;
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #051B44;
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+
+#calendar td {
+    border: none;
+}
+
+#calendar thead .next-btn,
+#calendar thead .prev-btn {
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #D8DAE5;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+#calendar thead .next i,
+#calendar thead .prev i {
+    color: #051B44;
+    font-weight: 500;
+}
+
+#calendar tbody td {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #101828;
+}
+
+#calendar tbody td.today {
+    position: relative;
+    z-index: 1;
+    color: rgb(7, 106, 200);
+}
+
+#calendar tbody td.today:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#calendar tbody td.active {
+    position: relative;
+    color: rgba(232, 233, 236, 1);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#calendar tbody td.active {
+    color: #1466B3;
+}
+
+#calendar tbody td.active:before {
+    content: '';
+    object-fit: cover;
+    background: #E9F1FF;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.calendarBox {
+    position: relative;
+}
+
+.calendarBox .calView {
+    position: absolute;
+    display: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 5px;
+    background-color: rgba(7, 107, 200, 1);
+    backdrop-filter: blur(10px);
+    padding: 35px 10px 30px 25px;
+    top: -8px;
+    z-index: 2;
+    width: 100%;
+    color: #646060;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.calendarBox .calView h2 {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    color: #fff;
+}
+
+.calendarBox .calView li {
+    list-style: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin: 0 30px 0 0;
+    padding: 10px 0 10px 0;
+}
+
+.calendarBox .calView li:last-child {
+    border: none;
+}
+
+.calendarBox .calView li a {
+    display: block;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.calendarBox .calView .close {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    opacity: 2;
+    font-size: 25px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.calendarBox .calView .calData {
+    padding: 0;
+}
+
+.calendarBox .calView .calData a {
+    text-decoration: none;
+}
+
+#calendar tbody {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width: 400px) {
+    .oy {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 1499px) {
+    .oy {
+        margin-top: 30px;
+    }
+}

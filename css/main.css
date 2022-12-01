@@ -1549,3 +1549,17 @@ textarea.appeal-form-control {
 .example-page .news-short-title {
     height: 32px;
 }
+
+/* site-info-page style  */
+.site-info-page {
+    padding: 30px 0 0;
+}
+
+.site-info-page .info-tabel {
+    text-align: center;
+}
+
+/* korrupsiya-page style */
+.korrupsiya-page {
+    padding: 30px 0 0;
+}
