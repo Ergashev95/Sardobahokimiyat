@@ -1388,7 +1388,7 @@ html {
 }
 
 .open-data-page .fast-connect-box {
-    height: calc(100% / 5);
+    height: calc(100% / 3);
 }
 
 .open-data-page .fast-connect-text {
